@@ -26,10 +26,10 @@
     --spacing-6: 3rem;
     --spacing-7: 4.5rem;
     --spacing-8: 6rem;
-    --display: clamp(2.8rem, 6vw, 5.2rem);
+    --display: clamp(2.55rem, 5vw, 4.75rem);
     --headline: clamp(2rem, 4vw, 3rem);
     --title: clamp(1.45rem, 3vw, 2rem);
-    --section-space: clamp(4rem, 7vw, 6rem);
+    --section-space: clamp(3.35rem, 6vw, 5rem);
 }
 
 *,
@@ -47,7 +47,7 @@ body {
     min-height: 100vh;
     font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
     color: var(--ink);
-    line-height: 1.7;
+    line-height: 1.68;
     background:
         radial-gradient(circle at top left, rgba(184, 113, 69, 0.12), transparent 32%),
         radial-gradient(circle at top right, rgba(14, 107, 109, 0.16), transparent 35%),
@@ -270,7 +270,7 @@ main {
     align-items: end;
     justify-content: space-between;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
 }
 
 .section-heading h2,
@@ -315,6 +315,11 @@ main {
 .hero-note {
     margin: 0;
     color: var(--ink-soft);
+}
+
+.section-heading p {
+    max-width: 42rem;
+    margin-top: 0.85rem;
 }
 
 .section-actions {
@@ -388,9 +393,13 @@ main {
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
-    gap: 2.5rem;
+    gap: 2.25rem;
     align-items: center;
-    padding: 4rem 0 2rem;
+    padding: 2.7rem 0 1.2rem;
+}
+
+.hero__content {
+    max-width: 43rem;
 }
 
 .hero__title {
@@ -403,25 +412,26 @@ main {
 }
 
 .hero__lead {
-    margin-top: 1.25rem;
-    max-width: 52rem;
-    font-size: 1.12rem;
+    margin-top: 1rem;
+    max-width: 41rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 .hero__support {
-    margin-top: 1rem;
-    max-width: 46rem;
+    margin-top: 0.85rem;
+    max-width: 38rem;
 }
 
 .hero__meta {
     display: flex;
     flex-wrap: wrap;
     gap: 0.85rem;
-    margin: 1.5rem 0;
+    margin: 1.2rem 0 1rem;
 }
 
 .hero-meta__item {
-    padding: 0.8rem 1rem;
+    padding: 0.75rem 0.95rem;
     border-radius: var(--radius-sm);
     background: rgba(255, 255, 255, 0.68);
     border: 1px solid rgba(23, 36, 45, 0.08);
@@ -484,6 +494,12 @@ main {
     font-size: 0.95rem;
 }
 
+.hero__actions,
+.page-intro__chips,
+.prose-actions {
+    margin-top: 1.35rem;
+}
+
 .topic-grid,
 .publication-grid,
 .detail-grid,
@@ -492,7 +508,7 @@ main {
 .photo-grid,
 .highlight-grid {
     display: grid;
-    gap: 1.25rem;
+    gap: 1.35rem;
 }
 
 .topic-grid {
@@ -521,7 +537,7 @@ main {
 .cv-card,
 .map-card,
 .notice-card {
-    padding: 1.4rem;
+    padding: 1.5rem;
 }
 
 .topic-card h3,
@@ -576,7 +592,7 @@ main {
 }
 
 .feature-card__body {
-    padding: 1.4rem;
+    padding: 1.5rem;
 }
 
 .feature-card__media {
@@ -629,18 +645,19 @@ main {
 }
 
 .publication-card h3 {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
 }
 
 .publication-list {
     margin: 0;
     padding-left: 1.5rem;
     display: grid;
-    gap: 1rem;
+    gap: 0;
 }
 
 .publication-item {
-    padding-right: 0.5rem;
+    padding: 1.05rem 0.5rem 1.05rem 0.1rem;
+    border-top: 1px solid var(--border);
 }
 
 .publication-item strong {
@@ -655,7 +672,7 @@ main {
 }
 
 .page-intro {
-    padding: 4rem 0 1rem;
+    padding: 3rem 0 0.75rem;
 }
 
 .page-intro h1 {
@@ -663,9 +680,9 @@ main {
 }
 
 .page-intro p {
-    max-width: 48rem;
+    max-width: 42rem;
     margin-top: 1rem;
-    font-size: 1.08rem;
+    font-size: 1.05rem;
 }
 
 .detail-grid {
@@ -685,7 +702,7 @@ main {
 
 .resource-list {
     display: grid;
-    gap: 0.85rem;
+    gap: 0.9rem;
 }
 
 .resource-list li {
@@ -693,7 +710,7 @@ main {
 }
 
 .story-grid {
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1.08fr 0.92fr;
 }
 
 .story-card {
@@ -702,7 +719,7 @@ main {
 
 .story-card__image {
     aspect-ratio: 16 / 9;
-    margin: -1.4rem -1.4rem 1.2rem;
+    margin: -1.5rem -1.5rem 1.2rem;
     overflow: hidden;
 }
 
@@ -742,7 +759,7 @@ main {
 
 .map-card {
     overflow: hidden;
-    padding: 1rem;
+    padding: 1.1rem;
 }
 
 .map-card iframe {
@@ -755,13 +772,13 @@ main {
 .image-feature {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
-    gap: 1.5rem;
+    gap: 1.65rem;
     align-items: center;
 }
 
 .image-card {
     overflow: hidden;
-    padding: 1rem;
+    padding: 1.1rem;
 }
 
 .prose {
@@ -776,7 +793,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .site-footer {
@@ -786,7 +803,7 @@ main {
 .site-footer__inner {
     width: var(--container);
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1.4rem;
     border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: var(--radius-lg);
     background: rgba(255, 251, 246, 0.88);
