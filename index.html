@@ -3,46 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake's Homepage</title>
+    <title>Jiaqi (Jake) Zhao | High-Energy Astrophysics</title>
+    <meta name="description" content="Personal website of Jiaqi (Jake) Zhao, a postdoctoral fellow at Tsinghua University studying neutron stars, pulsars, and high-energy astrophysical systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Jiaqi (Jake) Zhao, 赵嘉琦</h1>
-        <p>Postdoctoral Fellow<br>Tsinghua University</p>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research Interests</a>
-        <a href="publications.html">Publications</a>
-        <a href="beyond-academia.html">Beyond Academia</a>
-        <a href="links.html">Links</a>
-    </nav>
-
-
-    <section id="home">
-        <h2>Welcome</h2>
-        <div style="overflow: auto;">
-            <img src="images/personal_portrait.jpg" alt="A portrait of myself" style="float: left; width:40%; max-width:800px; margin-right:15px; margin-bottom:10px; vertical-align: top;">
-            <div>
-                <p>Welcome to my personal website! I am Jiaqi Zhao (aka Jake; he/him), currently a PhD candidate in Astronomy and Astrophysics at the <a href="https://www.ualberta.ca/en/index.html" target="_blank">University of Alberta</a>, working with Professor <a href="https://sites.ualberta.ca/~heinke/" target="_blank">Craig Heinke</a>. I was born and raised in <a href="https://www.google.com/maps/place/Xinxiang,+Henan,+China/@35.2927649,113.7205079,11z/data=!3m1!4b1!4m6!3m5!1s0x35d99117287bcd45:0xfb38df2ad86c52a3!8m2!3d35.3032299!4d113.92675!16zL20vMDMybjFm?entry=ttu" target="_blank">Xinxiang City</a>, Henan Province, China.  </p>
-                <p>I earned my Bachelor of Science degree in 2018 from Southwest University in Chongqing, China. After taking a gap year, I began my Master’s program at the University of Alberta, where I continued my research under Professor Heinke. I completed my Master of Science degree in 2021 and have since been pursuing my doctoral degree.</p>
-                <p>My research focuses on X-ray observations and analysis of neutron stars, pulsars, in particular millisecond pulsars in globular clusters, etc. Feel free to explore my research interests, publications, and more.</p>
-                <p>If you'd like to get in touch, you can email me at jzhao11-at-ualberta.ca or connect with me on <a href="https://www.linkedin.com/in/jiaqi-zhao/" target="_blank">LinkedIn</a>.</p>
-                <p><b>You can view or download my CV <a href="CV_JZ.pdf" target="_blank">here</a>.</b></p>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="site-header__inner">
+                <a class="brand" href="index.html">
+                    <span class="brand__name">Jiaqi (Jake) Zhao</span>
+                    <span class="brand__meta">Researcher in neutron stars and compact objects</span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                    <span class="nav-toggle__icon" aria-hidden="true"></span>
+                    Menu
+                </button>
+                <nav class="site-nav" id="site-nav" aria-label="Primary">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="research.html">Research</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="beyond-academia.html">Beyond Academia</a>
+                    <a href="links.html">Links</a>
+                </nav>
             </div>
-        </div>
-    </section>
+        </header>
 
+        <main id="main">
+            <section class="section section--tight">
+                <div class="container hero">
+                    <div class="hero__content reveal">
+                        <span class="eyebrow">Postdoctoral Fellow at Tsinghua University</span>
+                        <h1 class="hero__title">Jiaqi (Jake) Zhao <span>赵嘉琦</span></h1>
+                        <p class="hero__lead">I study neutron stars and pulsars through X-ray observations, with a particular focus on millisecond pulsars in globular clusters and other high-energy astrophysical phenomena.</p>
+                        <p class="hero__support">My work sits at the intersection of compact-object populations, multiwavelength counterpart identification, and the broader question of how dense stellar environments shape the systems we observe today.</p>
+                        <div class="hero__meta">
+                            <div class="hero-meta__item">
+                                <span class="hero-meta__label">Current focus</span>
+                                <span class="hero-meta__value">X-ray studies of compact objects</span>
+                            </div>
+                            <div class="hero-meta__item">
+                                <span class="hero-meta__label">Core themes</span>
+                                <span class="hero-meta__value">MSPs, globular clusters, neutron stars</span>
+                            </div>
+                        </div>
+                        <div class="chip-row">
+                            <span class="chip">X-ray astronomy</span>
+                            <span class="chip">Millisecond pulsars</span>
+                            <span class="chip">Globular clusters</span>
+                        </div>
+                        <div class="button-row" style="margin-top: 1.5rem;">
+                            <a class="button button--primary" href="CV_JZ.pdf" target="_blank" rel="noreferrer">View CV</a>
+                            <a class="button button--secondary" href="publications.html">Selected Publications</a>
+                            <a class="button button--ghost" href="mailto:jzhao11@ualberta.ca">Email</a>
+                        </div>
+                    </div>
 
+                    <aside class="hero__media reveal delay-1">
+                        <figure class="portrait-card">
+                            <img src="images/personal_portrait.jpg" alt="Portrait of Jiaqi (Jake) Zhao">
+                            <figcaption class="portrait-card__body">
+                                <p class="hero-note">High-energy astrophysics, compact objects, and population-level questions anchored in careful observational analysis.</p>
+                            </figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </section>
 
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <div>
+                            <span class="eyebrow">Current Work</span>
+                            <h2>Questions that keep pulling me back to the data</h2>
+                        </div>
+                    </div>
+                    <div class="topic-grid">
+                        <article class="topic-card reveal">
+                            <h3>X-ray counterparts</h3>
+                            <p>Identifying and characterizing X-ray counterparts to millisecond pulsars in crowded stellar environments such as M5, M13, and Omega Centauri.</p>
+                            <a class="topic-card__link" href="research.html">See research themes</a>
+                        </article>
+                        <article class="topic-card reveal delay-1">
+                            <h3>Dense stellar systems</h3>
+                            <p>Using globular clusters as laboratories for understanding how stellar interactions, binary evolution, and compact remnants shape pulsar populations.</p>
+                            <a class="topic-card__link" href="research.html">Read more</a>
+                        </article>
+                        <article class="topic-card reveal delay-2">
+                            <h3>Broader neutron-star phenomena</h3>
+                            <p>Following questions that extend beyond classic MSP studies, including the Galactic Center excess, magnetars, and emerging long-period transients.</p>
+                            <a class="topic-card__link" href="research.html">Explore related work</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-        <p>&copy; 2024-2025 Jiaqi Zhao. All rights reserved.</p>
-    </footer>
+            <section class="section section--alt">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <div>
+                            <span class="eyebrow">Research Highlights</span>
+                            <h2>Compact objects, resolved carefully</h2>
+                            <p>My research combines detailed observational analysis with broader astrophysical questions about how compact objects form, evolve, and cluster.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-grid">
+                        <article class="feature-card reveal">
+                            <div class="feature-card__body">
+                                <h3>Millisecond pulsars in globular clusters</h3>
+                                <p>Globular clusters are ideal environments for studying MSP populations because their high stellar densities efficiently produce the binaries that spin neutron stars up to millisecond periods.</p>
+                                <p>Much of my work focuses on building a clearer observational picture of these systems in X-rays and connecting them to their cluster environments.</p>
+                            </div>
+                        </article>
+                        <article class="feature-card reveal delay-1">
+                            <div class="feature-card__body">
+                                <h3>From cluster cores to the Galactic bulge</h3>
+                                <p>I am interested in how compact-object studies in one environment inform another, especially when it comes to unresolved MSP populations and the Galactic Center gamma-ray excess.</p>
+                                <p>That same curiosity extends to magnetars and the newly emerging long-period transient population.</p>
+                            </div>
+                        </article>
+                        <article class="feature-card feature-card--image reveal delay-2">
+                            <div class="feature-card__media">
+                                <img src="images/OmegaCen.png" alt="Optical and X-ray images of the globular cluster Omega Centauri">
+                            </div>
+                            <div class="feature-card__body">
+                                <h3>Omega Centauri as a case study</h3>
+                                <p>A recurring thread in my work is how X-ray observations can help isolate faint compact systems in crowded cluster fields.</p>
+                                <p class="caption">Optical and Chandra views of Omega Centauri offer a glimpse into the environments where these questions become concrete.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <div>
+                            <span class="eyebrow">Selected Publications</span>
+                            <h2>A few papers that capture the arc of the work</h2>
+                        </div>
+                        <div class="section-actions reveal delay-1">
+                            <a class="button button--ghost" href="publications.html">View all publications</a>
+                        </div>
+                    </div>
+                    <div class="publication-grid">
+                        <article class="publication-card reveal">
+                            <div>
+                                <div class="publication-card__meta">
+                                    <span>2025</span>
+                                    <span>ApJ</span>
+                                </div>
+                                <h3>Verification of Cas A neutron star cooling rate using Chandra HRC-S observations</h3>
+                                <p>A recent step into neutron-star cooling, using Chandra observations to revisit one of the field's most closely watched compact-object benchmarks.</p>
+                            </div>
+                            <a class="publication-card__link" href="https://ui.adsabs.harvard.edu/search/q=title%3A%22Verification%20of%20Cas%20A%20neutron%20star%20cooling%20rate%20using%20Chandra%20HRC-S%20observations%22&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0" target="_blank" rel="noreferrer">View on ADS</a>
+                        </article>
+                        <article class="publication-card reveal delay-1">
+                            <div>
+                                <div class="publication-card__meta">
+                                    <span>2023</span>
+                                    <span>MNRAS</span>
+                                </div>
+                                <h3>A Chandra X-ray study of millisecond pulsars in Omega Centauri</h3>
+                                <p>An in-depth look at MSP X-ray properties in one of the most intriguing globular-cluster environments.</p>
+                            </div>
+                            <a class="publication-card__link" href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.2736Z/abstract" target="_blank" rel="noreferrer">View on ADS</a>
+                        </article>
+                        <article class="publication-card reveal delay-2">
+                            <div>
+                                <div class="publication-card__meta">
+                                    <span>2022</span>
+                                    <span>MNRAS</span>
+                                </div>
+                                <h3>A census of X-ray millisecond pulsars in globular clusters</h3>
+                                <p>A broader population-level view of X-ray MSPs across clusters, tying individual detections to the bigger picture.</p>
+                            </div>
+                            <a class="publication-card__link" href="https://ui.adsabs.harvard.edu/search/q=title%3A%22A%20census%20of%20X-ray%20millisecond%20pulsars%20in%20globular%20clusters%22&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0" target="_blank" rel="noreferrer">View on ADS</a>
+                        </article>
+                        <article class="publication-card reveal delay-3">
+                            <div>
+                                <div class="publication-card__meta">
+                                    <span>2021</span>
+                                    <span>MNRAS</span>
+                                </div>
+                                <h3>Chandra and HST studies of six millisecond pulsars in M13</h3>
+                                <p>A multi-instrument study that helped establish part of the observational foundation for my later MSP work.</p>
+                            </div>
+                            <a class="publication-card__link" href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.1596Z/abstract" target="_blank" rel="noreferrer">View on ADS</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
+            <section class="section section--alt">
+                <div class="container">
+                    <div class="story-grid">
+                        <article class="story-card reveal">
+                            <div class="story-card__image">
+                                <img src="images/larch_valley.jpg" alt="Mountain landscape from Larch Valley">
+                            </div>
+                            <h3>Beyond research</h3>
+                            <p>When I am away from telescopes, cluster cores, and spectral fits, I tend to end up outside. Hiking, camping, snowboarding, and long drives toward the Rockies have become an important counterweight to academic life.</p>
+                            <p>The personal side of the site is still here, just with a little more room to breathe.</p>
+                            <a class="story-card__link" href="beyond-academia.html">Visit the gallery and map</a>
+                        </article>
+                        <article class="notice-card reveal delay-1">
+                            <div>
+                                <span class="eyebrow">Quick Links</span>
+                                <p class="footer-copy">For the full publication list, useful research resources, or the archived version of the original site, the essentials are one click away.</p>
+                            </div>
+                            <div class="button-row">
+                                <a class="button button--secondary" href="links.html">Research links</a>
+                                <a class="button button--ghost" href="legacy/index.html">Legacy site</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div class="site-footer__top">
+                    <div>
+                        <p class="footer-title">Jiaqi (Jake) Zhao</p>
+                        <p class="footer-copy">Postdoctoral Fellow at Tsinghua University studying neutron stars, pulsars, and high-energy astrophysical systems through observational X-ray astronomy.</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="mailto:jzhao11@ualberta.ca">Email</a>
+                        <a href="CV_JZ.pdf" target="_blank" rel="noreferrer">CV</a>
+                        <a href="https://www.linkedin.com/in/jiaqi-zhao/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-7716-1166&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0" target="_blank" rel="noreferrer">NASA ADS</a>
+                    </div>
+                </div>
+                <div class="site-footer__bottom">
+                    <span>&copy; 2024-2026 Jiaqi Zhao. All rights reserved.</span>
+                    <a class="footer-legacy" href="legacy/index.html">Legacy site</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
-
