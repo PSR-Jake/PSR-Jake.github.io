@@ -773,7 +773,7 @@ main {
 
 .map-card iframe {
     width: 100%;
-    min-height: 460px;
+    min-height: 520px;
     border: 0;
     border-radius: calc(var(--radius-md) - 8px);
 }
@@ -1023,7 +1023,7 @@ main {
     }
 
     .map-card iframe {
-        min-height: 360px;
+        min-height: 420px;
     }
 }
 
