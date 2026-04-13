@@ -723,6 +723,15 @@ main {
     overflow: hidden;
 }
 
+.story-card__image--full {
+    aspect-ratio: auto;
+}
+
+.story-card__image--full img {
+    height: auto;
+    object-fit: contain;
+}
+
 .photo-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
