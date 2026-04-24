@@ -466,8 +466,7 @@ main {
 .story-card,
 .resource-card,
 .cv-card,
-.map-card,
-.notice-card {
+.map-card {
     background: var(--surface);
     border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: var(--radius-md);
@@ -535,8 +534,7 @@ main {
 .story-card,
 .resource-card,
 .cv-card,
-.map-card,
-.notice-card {
+.map-card {
     padding: 1.5rem;
 }
 
@@ -713,6 +711,10 @@ main {
     grid-template-columns: 1.08fr 0.92fr;
 }
 
+.story-grid--single {
+    grid-template-columns: 1fr;
+}
+
 .story-card {
     overflow: hidden;
 }
@@ -796,13 +798,6 @@ main {
 
 .prose p + p {
     margin-top: 1rem;
-}
-
-.notice-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.25rem;
 }
 
 .site-footer {
