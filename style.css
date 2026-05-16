@@ -1,14 +1,14 @@
 :root {
     --bg: #f4efe7;
-    --bg-accent: #e5ece6;
+    --bg-accent: #ece4f1;
     --surface: rgba(255, 251, 246, 0.82);
     --surface-strong: #fffdfa;
     --surface-muted: #f0ece5;
     --ink: #17242d;
     --ink-soft: #5d6a72;
-    --accent: #0e6b6d;
-    --accent-strong: #0a5455;
-    --accent-secondary: #b87145;
+    --accent: #660874;
+    --accent-strong: #4f065b;
+    --accent-secondary: #8e58a6;
     --border: rgba(23, 36, 45, 0.12);
     --border-strong: rgba(23, 36, 45, 0.2);
     --shadow-soft: 0 22px 54px rgba(23, 36, 45, 0.09);
@@ -49,9 +49,9 @@ body {
     color: var(--ink);
     line-height: 1.68;
     background:
-        radial-gradient(circle at top left, rgba(184, 113, 69, 0.12), transparent 32%),
-        radial-gradient(circle at top right, rgba(14, 107, 109, 0.16), transparent 35%),
-        linear-gradient(180deg, #faf6f1 0%, var(--bg) 38%, #f7f2eb 100%);
+        radial-gradient(circle at top left, rgba(142, 88, 166, 0.12), transparent 32%),
+        radial-gradient(circle at top right, rgba(102, 8, 116, 0.15), transparent 35%),
+        linear-gradient(180deg, #faf6f1 0%, var(--bg) 38%, #f6f0f7 100%);
 }
 
 img {
@@ -71,12 +71,12 @@ a:hover {
 a:focus-visible,
 button:focus-visible,
 iframe:focus-visible {
-    outline: 3px solid rgba(14, 107, 109, 0.35);
+    outline: 3px solid rgba(102, 8, 116, 0.3);
     outline-offset: 4px;
 }
 
 ::selection {
-    background: rgba(14, 107, 109, 0.14);
+    background: rgba(102, 8, 116, 0.14);
 }
 
 .skip-link {
@@ -162,7 +162,7 @@ iframe:focus-visible {
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-    background: rgba(14, 107, 109, 0.1);
+    background: rgba(102, 8, 116, 0.1);
     color: var(--accent-strong);
 }
 
@@ -358,7 +358,7 @@ main {
 .button--primary {
     background: var(--accent);
     color: #fff;
-    box-shadow: 0 18px 36px rgba(14, 107, 109, 0.22);
+    box-shadow: 0 18px 36px rgba(102, 8, 116, 0.2);
 }
 
 .button--primary:hover {
@@ -367,8 +367,8 @@ main {
 }
 
 .button--secondary {
-    background: rgba(14, 107, 109, 0.08);
-    border-color: rgba(14, 107, 109, 0.14);
+    background: rgba(102, 8, 116, 0.07);
+    border-color: rgba(102, 8, 116, 0.14);
     color: var(--accent-strong);
 }
 
@@ -384,7 +384,7 @@ main {
     padding: 0.55rem 0.9rem;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(14, 107, 109, 0.1);
+    border: 1px solid rgba(102, 8, 116, 0.1);
     color: var(--ink);
     font-size: 0.9rem;
     font-weight: 500;
@@ -639,7 +639,7 @@ main {
     align-items: center;
     padding: 0.28rem 0.55rem;
     border-radius: 999px;
-    background: rgba(14, 107, 109, 0.08);
+    background: rgba(102, 8, 116, 0.08);
 }
 
 .publication-card h3 {
@@ -842,7 +842,7 @@ main {
     align-items: center;
     padding: 0.65rem 0.85rem;
     border-radius: 999px;
-    background: rgba(14, 107, 109, 0.08);
+    background: rgba(102, 8, 116, 0.08);
     color: var(--accent-strong);
     font-weight: 600;
 }
